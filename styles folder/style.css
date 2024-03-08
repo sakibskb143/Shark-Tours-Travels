@@ -1,0 +1,208 @@
+/* shared css style */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Mulish", sans-serif;
+
+}
+
+main,
+header {
+    width: 80%;
+    /* padding-left: 135px; 
+  padding-right: 135px; */
+    margin: auto;
+}
+
+section {
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.common-description {
+    color: #FFF;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+    /* width: 50%; */
+
+}
+
+/* banner secton css style */
+
+.banner-container {
+
+    border-radius: 16px;
+    height: 500px;
+    margin: auto;
+    width: 80%;
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url(/Images/Group\ 13\ \(1\)\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+
+
+}
+
+.banner-container h1 {
+    color: #FFF;
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.banner-container p {
+    margin: 24px 147px 48px;
+}
+
+.banner-find-section {
+    display: inline-flex;
+    padding: 16px;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+
+}
+
+.banner-find-section>input,
+select,
+button {
+    /* width: 174px; */
+    /* height: 52px; */
+    border-radius: 8px;
+    background: #FFF;
+    padding: 1rem;
+    border: none;
+}
+
+.banner-find-section>button {
+
+    background: #FF5400;
+}
+
+
+/* -----------------Popular section css style-------------- */
+
+.popular-container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    justify-content: center;
+    /* align-items: center; */
+    gap: 50px;
+
+}
+
+.section-heading {
+    color: #131318;
+    /* text-align: center; */
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+
+}
+
+.popular-des {
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+.popular-list-section {
+   margin-left: 30px;
+}
+.popular-list-section ul li{
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.btn-popular{
+    border-radius: 8px;
+    background: #FF5400;
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 15px 35px;
+    border: none;
+    color: #FFF;
+    margin-top: 2.5rem;
+}
+.popular-img{
+    width: 100%;
+    /* height: 550px; */
+    
+}
+
+/* media query for Mobile with max-witd 600px */
+@media screen and (max-width: 600px) {
+    .banner-container ,.popular-container{
+        width: 80%;
+    }
+
+    .banner-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner-container p {
+        width: 90%;
+    }
+
+    .banner-find-section ,.popular-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    /* .popular-container{
+        width: 80%;
+        
+    } */
+    .popular-content{
+        width: 100%;
+        margin:  auto;
+    }
+    .section-heading{
+        font-size: 1.3rem;
+    }
+    .popular-img img{
+        width: 100%;
+    }
+
+}
+
+/* media query for Mobile with max-witd 600px */
+@media screen and (min-width:600px) and (max-width:990px) {
+    .banner-container,.popular-container {
+        width: 80%;
+    }
+
+    .banner-container h1 {
+        font-size: 2rem;
+    }
+
+    .banner-container p {
+        width: 80%;
+    }
+
+    .banner-find-section ,.popular-container{
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .popular-content{
+        width: 100%;
+        margin:  auto;
+    }
+    .section-heading{
+        font-size: 1.3rem;
+    }
+    .popular-img img{
+        width: 100%;
+    }
+
+}
