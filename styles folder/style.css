@@ -147,8 +147,6 @@ button {
     margin-top: 2.5rem;
 }
 
-.popular-img {}
-
 /* -------------------------------destination section css style------------------------------- */
 .destination-section {
     display: flex;
@@ -375,7 +373,7 @@ button {
     justify-content: center;
     align-items: center;
     padding: 110px 100px;
-    
+
 }
 
 .footr-logo {
@@ -402,7 +400,7 @@ button {
     text-align: center;
     margin: 0 30px;
     color: #5A5A5D;
-   
+
 
 }
 
@@ -434,6 +432,50 @@ button {
     font-family: Inter;
     font-weight: 300;
 }
+
+/* --------------nev section---------------- */
+.container-nev{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3.8rem;
+}
+.navbar-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.nev-menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+} 
+.navber-logo {
+    display: flex;
+    gap: 1rem;
+}
+
+.nev-menu ul li {
+    list-style: none;
+   
+}
+.nev-menu span{
+    color: #FF5400;
+}
+
+.nev-menu a {
+    text-decoration: none;
+    
+    color: #424247;
+  
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
 
 /* media query for Mobile with max-witd 600px */
 @media screen and (max-width: 600px) {
@@ -482,8 +524,9 @@ button {
         align-items: flex-start;
         /* width: 100%; */
     }
-    .fr-title{
-        font-size: 22px;
+
+    .fr-title {
+        font-size: 20px;
     }
 
 }
@@ -535,6 +578,9 @@ button {
 
     .choise-div-2>div {
         width: 90%;
+    }
+    .fr-title {
+        font-size: 20px;
     }
 
 }
